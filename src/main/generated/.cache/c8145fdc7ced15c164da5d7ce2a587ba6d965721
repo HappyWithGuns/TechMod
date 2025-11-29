@@ -1,1 +1,5 @@
-// 1.21	2025-11-29T00:43:03.9615306	Tech Mod/Recipes
+// 1.21	2025-11-29T09:18:42.041235	Tech Mod/Recipes
+91d645499d064a3e06cc5d20ca5d8ccf67544c92 data\techmod\advancement\recipes\misc\nickel_ingot_from_blasting_raw_nickel.json
+bde9f19af10cf61db798dde814aa3fdbab4c42c5 data\techmod\recipe\nickel_ingot_from_smelting_raw_nickel.json
+1efeba725d6c06df17e903924a061493a3e6cd29 data\techmod\recipe\nickel_ingot_from_blasting_raw_nickel.json
+757e2864ff0e5117a0f6d6862d307e271c09363e data\techmod\advancement\recipes\misc\nickel_ingot_from_smelting_raw_nickel.json

@@ -1,1 +1,6 @@
-{}
+{
+  "block.techmod.nickel_deepslate_ore": "Nickel Deepslate Ore",
+  "block.techmod.nickel_ore": "Nickel Ore",
+  "item.techmod.nickel_ingot": "Nickel Ingot",
+  "item.techmod.raw_nickel": "Raw Nickel"
+}

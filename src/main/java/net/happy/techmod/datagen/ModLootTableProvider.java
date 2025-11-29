@@ -2,6 +2,8 @@ package net.happy.techmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.happy.techmod.block.ModBlocks;
+import net.happy.techmod.item.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
@@ -29,9 +31,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //Ore Drop
         //addDrop(Block, oreDrops(Block, DroppedItem));
+        addDrop(ModBlocks.NICKEL_ORE, oreDrops(ModBlocks.NICKEL_ORE, ModItems.RAW_NICKEL));
 
         //Multiple Ore Drop
         //addDrop(Block, multipleOreDrops(Block, DroppedItem, min, max));
+        addDrop(ModBlocks.NICKEL_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.NICKEL_DEEPSLATE_ORE, ModItems.RAW_NICKEL, 1, 3));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

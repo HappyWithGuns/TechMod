@@ -2,6 +2,7 @@ package net.happy.techmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.happy.techmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
@@ -46,6 +47,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //
         //offerSmelting(exporter, ORE_SMELTABLES, RecipeCategory, ModItems.RESULT, Experience,
         //        CookTime, group);
+
+        List<ItemConvertible> NICKEL_SMELTABLES = List.of(ModItems.RAW_NICKEL);
+        offerSmelting(exporter, NICKEL_SMELTABLES, RecipeCategory.MISC, ModItems.NICKEL_INGOT, 0.25f, 200, "nickel_ingot");
+        offerBlasting(exporter, NICKEL_SMELTABLES, RecipeCategory.MISC, ModItems.NICKEL_INGOT, 0.25f, 100, "nickel_ingot");
+
 
         //Register Item to Block and Block to Item (ex. Iron to Block of Iron and vice versa)
         //
