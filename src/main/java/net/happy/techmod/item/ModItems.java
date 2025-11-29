@@ -18,10 +18,5 @@ public class ModItems {
 
     public static void registerModItems() {
         TechMod.LOGGER.info("Registering ModItems for " + TechMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(NICKEL_INGOT);
-            entries.add(RAW_NICKEL);
-        });
     }
 }

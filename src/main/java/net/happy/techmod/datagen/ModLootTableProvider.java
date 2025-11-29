@@ -28,6 +28,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         //Self Drop
         //addDrop(Block);
+        addDrop(ModBlocks.BLOCK_OF_NICKEL);
 
         //Ore Drop
         //addDrop(Block, oreDrops(Block, DroppedItem));

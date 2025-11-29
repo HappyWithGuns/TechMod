@@ -2,6 +2,7 @@ package net.happy.techmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.happy.techmod.block.ModBlocks;
 import net.happy.techmod.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -57,6 +58,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //
         //offerReversibleCompactingRecipes(exporter, RecipeCategory, ModItems.Item, RecipeCategory,
         //        ModBlocks.Block);
-
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.NICKEL_INGOT, RecipeCategory.DECORATIONS, ModBlocks.BLOCK_OF_NICKEL);
     }
 }

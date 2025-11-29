@@ -20,6 +20,7 @@ public class ModModelProvider extends FabricModelProvider {
         //blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.block);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICKEL_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICKEL_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_NICKEL);
     }
 
     @Override

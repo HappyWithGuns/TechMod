@@ -12,6 +12,11 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
+    public static final Block BLOCK_OF_NICKEL = registerBlock("block_of_nickel",
+            new Block(AbstractBlock.Settings.create()
+                    .strength(3f)
+                    .requiresTool()));
+
     public static final Block NICKEL_ORE = registerBlock("nickel_ore",
             new Block(AbstractBlock.Settings.create()
                     .strength(3f)
@@ -34,10 +39,5 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         TechMod.LOGGER.info("Registering ModBlocks for " + TechMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
-            entries.add(ModBlocks.NICKEL_ORE);
-            entries.add(ModBlocks.NICKEL_DEEPSLATE_ORE);
-        });
     }
 }
