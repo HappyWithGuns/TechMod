@@ -28,6 +28,11 @@ public class ModModelProvider extends FabricModelProvider {
         //Register Item Model
         //itemModelGenerator.register(Items, Models.GENERATED);
         itemModelGenerator.register(ModItems.NICKEL_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_NICKEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MORTAR_AND_PESTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NICKEL_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IRON_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_DUST, Models.GENERATED);
     }
 }

@@ -2,7 +2,12 @@
   "block.techmod.block_of_nickel": "Block of Nickel",
   "block.techmod.nickel_deepslate_ore": "Nickel Deepslate Ore",
   "block.techmod.nickel_ore": "Nickel Ore",
+  "item.techmod.iron_dust": "Iron Dust",
+  "item.techmod.mortar_and_pestle": "Mortar and Pestle",
+  "item.techmod.nickel_dust": "Nickel Dust",
   "item.techmod.nickel_ingot": "Nickel Ingot",
   "item.techmod.raw_nickel": "Raw Nickel",
+  "item.techmod.steel_dust": "Steel Dust",
+  "item.techmod.steel_ingot": "Steel Ingot",
   "itemgroup.techmod.techmod_items": "Tech Mod Items"
 }

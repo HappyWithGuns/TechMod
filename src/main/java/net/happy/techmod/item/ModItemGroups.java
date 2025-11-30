@@ -22,6 +22,11 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BLOCK_OF_NICKEL);
                         entries.add(ModItems.RAW_NICKEL);
                         entries.add(ModItems.NICKEL_INGOT);
+                        entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModItems.NICKEL_DUST);
+                        entries.add(ModItems.IRON_DUST);
+                        entries.add(ModItems.STEEL_DUST);
+                        entries.add(ModItems.MORTAR_AND_PESTLE);
                     }).build());
 
     public static void registerItemGroups() {

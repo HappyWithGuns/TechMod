@@ -14,7 +14,12 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(RegistryWrapper.WrapperLookup wrapperLookup, TranslationBuilder translationBuilder) {
         translationBuilder.add("item.techmod.nickel_ingot", "Nickel Ingot");
+        translationBuilder.add("item.techmod.steel_ingot", "Steel Ingot");
         translationBuilder.add("item.techmod.raw_nickel", "Raw Nickel");
+        translationBuilder.add("item.techmod.mortar_and_pestle", "Mortar and Pestle");
+        translationBuilder.add("item.techmod.nickel_dust", "Nickel Dust");
+        translationBuilder.add("item.techmod.iron_dust", "Iron Dust");
+        translationBuilder.add("item.techmod.steel_dust", "Steel Dust");
 
         translationBuilder.add("block.techmod.nickel_ore", "Nickel Ore");
         translationBuilder.add("block.techmod.nickel_deepslate_ore", "Nickel Deepslate Ore");

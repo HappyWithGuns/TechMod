@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "techmod:iron_dust"
+    },
+    {
+      "item": "techmod:nickel_dust"
+    },
+    {
+      "item": "techmod:nickel_dust"
+    },
+    {
+      "item": "techmod:nickel_dust"
+    },
+    {
+      "item": "techmod:nickel_dust"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "techmod:steel_dust"
+  }
+}

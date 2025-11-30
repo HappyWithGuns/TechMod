@@ -8,6 +8,7 @@ import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -31,6 +32,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //        .pattern("RRR")
         //        .input('R', Input)
         //        .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MORTAR_AND_PESTLE)
+                .pattern(" W ")
+                .pattern("SWS")
+                .pattern("SSS")
+                .input('W', Items.STICK)
+                .input('S', Items.STONE)
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter);
 
         //Register Shapeless Recipe
         //
@@ -40,6 +49,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         //
         //If you have to shapeless recipes the produce the same result use
         //.offerTo(exporter, Identifier.of(ModID, UniqueName));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NICKEL_DUST, 1)
+                .input(ModItems.MORTAR_AND_PESTLE)
+                .input(ModItems.NICKEL_INGOT)
+                .criterion(hasItem(ModItems.NICKEL_DUST), conditionsFromItem(ModItems.NICKEL_INGOT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_DUST, 1)
+                .input(ModItems.MORTAR_AND_PESTLE)
+                .input(Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_DUST)
+                .input(ModItems.IRON_DUST, 1)
+                .input(ModItems.NICKEL_DUST, 4)
+                .criterion(hasItem(ModItems.IRON_DUST), conditionsFromItem(ModItems.IRON_DUST))
+                .criterion(hasItem(ModItems.NICKEL_DUST), conditionsFromItem(ModItems.NICKEL_DUST))
+                .offerTo(exporter);
 
         //Register a list of items that smelt into one item
         //

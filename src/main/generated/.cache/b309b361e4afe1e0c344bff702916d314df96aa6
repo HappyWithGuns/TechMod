@@ -1,12 +1,17 @@
-// 1.21	2025-11-29T10:06:15.0063928	Tech Mod/Model Definitions
+// 1.21	2025-11-29T20:23:50.7130641	Tech Mod/Model Definitions
+218c9c28fc6363f463d1cca615bebc46e74e7aee assets\techmod\blockstates\nickel_deepslate_ore.json
+7abbeb35bc4cd6a39d6ea4a9a8ca1136234b90c7 assets\techmod\models\item\nickel_dust.json
+4eb5557670766d71155acc493f600c2159e673aa assets\techmod\models\item\raw_nickel.json
+692ad145d7c2af110b2ea491a3dbc1c0423c64b2 assets\techmod\blockstates\block_of_nickel.json
+38f24861ee08925514cc11124d2672ca3861d08f assets\techmod\models\item\iron_dust.json
 ea476469f616cb83fc173e6a109df4fc6e539b6a assets\techmod\models\item\block_of_nickel.json
 7d6b8e5290ab7893c2ba1a4289c3c5c2e586cee8 assets\techmod\models\block\block_of_nickel.json
-218c9c28fc6363f463d1cca615bebc46e74e7aee assets\techmod\blockstates\nickel_deepslate_ore.json
+d9a5c688db75a00d6e4118177aa127b5cf27083b assets\techmod\models\item\steel_dust.json
 7633111789568bd8a0f8ebcc328af63d8dccbdd9 assets\techmod\models\block\nickel_ore.json
+0a12198814dcf7708034c6752e1edd5018a6853c assets\techmod\models\item\mortar_and_pestle.json
 d8926c04c5db69e23e5c572ec6c269ee9d71325e assets\techmod\blockstates\nickel_ore.json
 8cefd3f7888736fbefbdc17839d9c62c3010e31e assets\techmod\models\block\nickel_deepslate_ore.json
 2a39dbfe1b8a19f2373b471ea8b23e363248f70a assets\techmod\models\item\nickel_ingot.json
 9a5a58d79a8659b143ef427311b6408b18d999aa assets\techmod\models\item\nickel_ore.json
-4eb5557670766d71155acc493f600c2159e673aa assets\techmod\models\item\raw_nickel.json
-692ad145d7c2af110b2ea491a3dbc1c0423c64b2 assets\techmod\blockstates\block_of_nickel.json
 c70c033565b218726b407909077e09b4297b5812 assets\techmod\models\item\nickel_deepslate_ore.json
+fb9ac34ee93625f088636d3743991914dce17590 assets\techmod\models\item\steel_ingot.json
