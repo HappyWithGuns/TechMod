@@ -2,6 +2,7 @@ package net.happy.techmod.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.happy.techmod.TechMod;
+import net.happy.techmod.block.custom.PedestalBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -26,6 +27,10 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .strength(4f)
                     .requiresTool()));
+
+    public static final Block PEDESTAL = registerBlock("pedestal",
+            new PedestalBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

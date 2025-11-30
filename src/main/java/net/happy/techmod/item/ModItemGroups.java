@@ -29,6 +29,15 @@ public class ModItemGroups {
                         entries.add(ModItems.MORTAR_AND_PESTLE);
                     }).build());
 
+    public static final ItemGroup TECH_MOD_DECORATIONS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TechMod.MOD_ID, "techmod_decorations"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModBlocks.PEDESTAL.asItem()))
+                    .displayName(Text.translatable("itemgroup.techmod.techmod_decorations"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.PEDESTAL);
+                    }).build());
+
     public static void registerItemGroups() {
         TechMod.LOGGER.info("Registering ModItemGroups for " + TechMod.MOD_ID);
     }
