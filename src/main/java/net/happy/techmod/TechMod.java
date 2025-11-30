@@ -3,6 +3,7 @@ package net.happy.techmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.happy.techmod.block.ModBlocks;
+import net.happy.techmod.block.entity.ModBlockEntities;
 import net.happy.techmod.item.ModItemGroups;
 import net.happy.techmod.item.ModItems;
 import org.slf4j.Logger;
@@ -17,5 +18,6 @@ public class TechMod implements ModInitializer {
         ModItems.registerModItems();
         ModBlocks.registerModBlocks();
         ModItemGroups.registerItemGroups();
+        ModBlockEntities.registerBlockEntities();
 	}
 }
