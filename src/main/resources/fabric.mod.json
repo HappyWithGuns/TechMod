@@ -20,7 +20,10 @@
 		],
 		"fabric-datagen": [
 			"net.happy.techmod.TechModDataGenerator"
-		]
+		],
+        "client": [
+            "net.happy.techmod.TechModClient"
+        ]
 	},
 	"mixins": [
 		"techmod.mixins.json"

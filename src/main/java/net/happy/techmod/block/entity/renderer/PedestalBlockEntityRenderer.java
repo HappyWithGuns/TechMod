@@ -25,14 +25,15 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
 
     @Override
     public void render(PedestalBlockEntity entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
-        ItemStack stack = new ItemStack(ModItems.NICKEL_INGOT);
+        ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
+        ItemStack stack = entity.getStack(0);
 
         matrices.push();
         matrices.translate(0.5f, 1.15f, 0.5f);
         matrices.scale(0.5f, 0.5f, 0.5f);
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.getRenderingRotation()));
 
-        MinecraftClient.getInstance().getItemRenderer().renderItem(stack, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(),
+        itemRenderer.renderItem(stack, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(),
                 entity.getPos()), overlay, matrices, vertexConsumers, entity.getWorld(), 1);
         matrices.pop();
     }
