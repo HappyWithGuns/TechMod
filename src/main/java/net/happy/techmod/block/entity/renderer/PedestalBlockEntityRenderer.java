@@ -33,7 +33,7 @@ public class PedestalBlockEntityRenderer implements BlockEntityRenderer<Pedestal
         matrices.scale(0.5f, 0.5f, 0.5f);
         matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(entity.getRenderingRotation()));
 
-        itemRenderer.renderItem(stack, ModelTransformationMode.GUI, getLightLevel(entity.getWorld(),
+        itemRenderer.renderItem(stack, ModelTransformationMode.GROUND, getLightLevel(entity.getWorld(),
                 entity.getPos()), overlay, matrices, vertexConsumers, entity.getWorld(), 1);
         matrices.pop();
     }
