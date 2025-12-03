@@ -1,13 +1,12 @@
 package net.happy.techmod.block;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.happy.techmod.TechMod;
+import net.happy.techmod.block.custom.ConvectionFurnaceBlock;
 import net.happy.techmod.block.custom.PedestalBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -30,7 +29,15 @@ public class ModBlocks {
 
     public static final Block PEDESTAL = registerBlock("pedestal",
             new PedestalBlock(AbstractBlock.Settings.create()
-                    .nonOpaque()));
+                    .nonOpaque()
+                    .strength(2f)
+                    .requiresTool()));
+
+    public static final Block CONVECTION_FURNACE = registerBlock("convection_furnace",
+            new ConvectionFurnaceBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()
+                    .strength(2f)
+                    .requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

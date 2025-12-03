@@ -7,6 +7,7 @@ import net.happy.techmod.block.entity.ModBlockEntities;
 import net.happy.techmod.item.ModItemGroups;
 import net.happy.techmod.item.ModItems;
 import net.happy.techmod.screen.ModScreenHandlers;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,4 +23,8 @@ public class TechMod implements ModInitializer {
         ModBlockEntities.registerBlockEntities();
         ModScreenHandlers.RegisterScreenHandler();
 	}
+
+    public static Identifier id(String path) {
+        return Identifier.of(MOD_ID, path);
+    }
 }

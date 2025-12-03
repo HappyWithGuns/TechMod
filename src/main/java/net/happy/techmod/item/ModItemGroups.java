@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NICKEL_DEEPSLATE_ORE);
                         entries.add(ModBlocks.NICKEL_ORE);
                         entries.add(ModBlocks.BLOCK_OF_NICKEL);
+                        entries.add(ModBlocks.CONVECTION_FURNACE);
                         entries.add(ModItems.RAW_NICKEL);
                         entries.add(ModItems.NICKEL_INGOT);
                         entries.add(ModItems.STEEL_INGOT);

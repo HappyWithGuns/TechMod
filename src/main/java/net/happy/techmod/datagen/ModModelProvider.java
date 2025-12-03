@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK_OF_NICKEL);
 
         blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.PEDESTAL);
+        blockStateModelGenerator.registerNorthDefaultHorizontalRotation(ModBlocks.CONVECTION_FURNACE);
     }
 
     @Override

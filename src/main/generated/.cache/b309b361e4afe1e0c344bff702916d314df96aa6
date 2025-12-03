@@ -1,5 +1,7 @@
-// 1.21	2025-11-30T19:47:32.6210144	Tech Mod/Model Definitions
+// 1.21	2025-12-02T22:19:02.5598406	Tech Mod/Model Definitions
+c980ada429f579352cf8a4cb4f5ae2a7324b4e53 assets\techmod\models\item\convection_furnace.json
 d42ba551d29a8ff7799198fd9a98f41559d7d897 assets\techmod\models\item\pedestal.json
+c810bdc325a4654f3641d5f1ab368937216ee2ee assets\techmod\blockstates\convection_furnace.json
 218c9c28fc6363f463d1cca615bebc46e74e7aee assets\techmod\blockstates\nickel_deepslate_ore.json
 7abbeb35bc4cd6a39d6ea4a9a8ca1136234b90c7 assets\techmod\models\item\nickel_dust.json
 4eb5557670766d71155acc493f600c2159e673aa assets\techmod\models\item\raw_nickel.json

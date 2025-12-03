@@ -2,6 +2,7 @@ package net.happy.techmod.screen;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.happy.techmod.TechMod;
+import net.happy.techmod.screen.custom.ConvectionFurnaceScreenHandler;
 import net.happy.techmod.screen.custom.PedestalScreenHandler;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,6 +15,12 @@ public class ModScreenHandlers {
             Registry.register(Registries.SCREEN_HANDLER, Identifier.of(TechMod.MOD_ID,
                     "pedestal_screen_handler"),
                     new ExtendedScreenHandlerType<>(PedestalScreenHandler::new,
+                            BlockPos.PACKET_CODEC));
+
+    public static final ScreenHandlerType<ConvectionFurnaceScreenHandler> CONVECTION_FURNACE_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, Identifier.of(TechMod.MOD_ID,
+                            "convection_furnace_screen_handler"),
+                    new ExtendedScreenHandlerType<>(ConvectionFurnaceScreenHandler::new,
                             BlockPos.PACKET_CODEC));
 
     public static void RegisterScreenHandler() {

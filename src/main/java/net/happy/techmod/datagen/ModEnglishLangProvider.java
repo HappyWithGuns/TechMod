@@ -25,6 +25,8 @@ public class ModEnglishLangProvider extends FabricLanguageProvider {
         translationBuilder.add("block.techmod.nickel_deepslate_ore", "Nickel Deepslate Ore");
         translationBuilder.add("block.techmod.block_of_nickel", "Block of Nickel");
         translationBuilder.add("block.techmod.pedestal", "Pedestal");
+        translationBuilder.add("block.techmod.convection_furnace", "Convection Furnace");
+        translationBuilder.add("block.techmod.furnace_generator", "Furnace Generator");
 
         translationBuilder.add("itemgroup.techmod.techmod_items", "Tech Mod Items");
         translationBuilder.add("itemgroup.techmod.techmod_decorations", "Tech Mod Decorations");

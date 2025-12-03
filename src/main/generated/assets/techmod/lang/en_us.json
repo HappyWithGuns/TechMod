@@ -1,5 +1,7 @@
 {
   "block.techmod.block_of_nickel": "Block of Nickel",
+  "block.techmod.convection_furnace": "Convection Furnace",
+  "block.techmod.furnace_generator": "Furnace Generator",
   "block.techmod.nickel_deepslate_ore": "Nickel Deepslate Ore",
   "block.techmod.nickel_ore": "Nickel Ore",
   "block.techmod.pedestal": "Pedestal",
